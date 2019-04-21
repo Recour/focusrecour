@@ -1,0 +1,28 @@
+<!-- <meta http-equiv="refresh" content="1" /> -->
+
+<nav>
+    <ul>
+        <li><a href="/">Music</a></li>
+        <li><a href="/directions">Directions</a></li>
+    </ul>
+</nav>
+
+<div id="clock"></div>
+
+<div>
+-------------------------------------
+</div>
+
+<script>
+    function updateClock() {
+        var clock = document.getElementById('clock');
+        var date = new Date();
+        var timeString = date.toTimeString();
+        var stringToDisplay = timeString.slice(0, 8);
+        clock.innerHTML = stringToDisplay;
+
+        setTimeout(updateClock, 1000);
+    }
+
+    updateClock();
+</script>
