@@ -1,17 +1,20 @@
 <!-- <meta http-equiv="refresh" content="1" /> -->
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<nav>
-    <ul>
-        <li><a href="/">Music</a></li>
-        <li><a href="/directions">Directions</a></li>
-    </ul>
-</nav>
-
-<div id="clock"></div>
-
-<div>
--------------------------------------
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Focus Recour</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <span class="navbar-text mr-2" id="clock"></span>
+      <a class="nav-link" href="/reboot">Reboot</a>
+    </div>
+  </nav>
 
 <script>
     function updateClock() {
